@@ -7,11 +7,20 @@
 body{
     width:70%;
     margin:0 auto;
+   background-color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: black;
+   
+}
+main{
+    margin-bottom: 60px;
 }
 
 header{
    padding: 1rem;
-    
+    display: fixed;
 }
 
 nav{
@@ -45,21 +54,21 @@ h1{
     font-size: 2rem;
 }
 .about-me img{
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    border-radius: 1%;
 }
 
-img:hover{
+.about-me img:hover{
     transform: scale(1.1);
     transition: ease-in-out 2.5s;
-   
-    
 }
 .project-item{
     list-style: none;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .project-item::before {
@@ -67,6 +76,60 @@ img:hover{
     margin-right: 5px; /* Spațiere față de text */
     font-size: 1.2em; /* Ajustează dimensiunea săgeții */
 }
+.project-item p {
+    margin-left: 20px; /* Indentare pentru descriere */
+    font-style: italic; /* Stil pentru a evidenția descrierea */
+    color: #555; /* Culoare mai deschisă pentru descriere */
+}
 p{
     font-size: 1.25rem;
+}
+
+
+.skills img{
+    width: 5%;
+    height: 5%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skills-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+p{
+    display: inline-flex;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px){
+    body{
+        width: 90%;
+    }
+    .about-me{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-me img{
+        width: 50%;
+        height: 50%;
+        margin:0 auto
+    }
+    
+   
+   
 }
